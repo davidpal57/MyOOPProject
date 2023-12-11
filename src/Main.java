@@ -60,8 +60,31 @@ public class Main {
         animal2.doarme();
         animal3.mananca();
         animal4.doarme();
+        animal4.nume = "Nume2";
 
         System.out.println(animal4.afiseaza());
         System.out.println(animal3.afiseaza());
+
+        Elev elev1 = new Elev("Popescu");
+        Elev elev2 = new Elev("Ionescu");
+        System.out.println(elev1.nume);
+        System.out.println(elev2.nume);
+        elev1.diriginte = "Isoscel2";
+        System.out.println(elev2.diriginte);
+
+        elev1.metodaNonStatica();
+        elev2.metodaStatica();
+
+        Film film1 = new Film();
+        film1.setTitlu("Titanic");
+        System.out.println(film1.getTitlu());
+
+        Inotator inotator1 = new Inotator();
+        inotator1.seAntreneaza();
+        inotator1.seOdihneste();
+
+        Maratonist maratonist1 = new Maratonist();
+        maratonist1.seAntreneaza();
+        maratonist1.seOdihneste();
     }
 }
