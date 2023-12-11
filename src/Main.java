@@ -45,5 +45,23 @@ public class Main {
         Persoana persoana3 = new Persoana(45,"M","Pop");
         System.out.println(persoana3.varsta + " " + persoana3.sex + " " + persoana3.nume);
 
+        Masina masina5 = new Masina();
+        System.out.println(masina5.marca);
+
+        Masina masina6 = new Masina("Tesla", 2022);
+        System.out.println(masina6.marca + " " + masina6.getanFabricatie());
+
+        Animal animal1 = new Animal();
+        Animal animal2 = new Animal("Azorel");
+        Animal animal3 = new Animal("Pisi", "maro");
+        Animal animal4 = new Animal("Nemo", "rosu", true);
+
+        animal1.mananca();
+        animal2.doarme();
+        animal3.mananca();
+        animal4.doarme();
+
+        System.out.println(animal4.afiseaza());
+        System.out.println(animal3.afiseaza());
     }
 }
