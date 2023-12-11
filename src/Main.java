@@ -85,6 +85,6 @@ public class Main {
 
         Maratonist maratonist1 = new Maratonist();
         maratonist1.seAntreneaza();
-        maratonist1.seOdihneste();
+        maratonist1.seOdihneste(); //,
     }
 }
