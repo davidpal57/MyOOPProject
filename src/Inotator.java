@@ -9,4 +9,8 @@ public class Inotator extends Sportiv {
     public void seOdihneste() {
         System.out.println("Inotatorul se odihneste");
     }
+
+    public Inotator(String tara, String sport) {
+        super(tara, sport);
+    }
 }

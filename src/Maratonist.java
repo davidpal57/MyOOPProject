@@ -8,4 +8,8 @@ public class Maratonist extends Sportiv {
     public void seOdihneste() {
         System.out.println("Maratonistul se odihneste");
     }
+
+    public Maratonist(String tara, String sport) {
+        super(tara, sport);
+    }
 }
