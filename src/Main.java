@@ -86,5 +86,16 @@ public class Main {
         Maratonist maratonist1 = new Maratonist();
         maratonist1.seAntreneaza();
         maratonist1.seOdihneste(); //,..
+
+        System.out.println("Exercitii 13/12/2023");
+
+        Mamifer mamifer1 = new Mamifer("Pinguinul");
+        mamifer1.scoateSunete();
+
+        Pisica pisica1 = new Pisica();
+        pisica1.scoateSunete();
+
+        Caine caine1 = new Caine();
+        caine1.scoateSunete();
     }
 }
