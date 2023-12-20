@@ -1,6 +1,24 @@
 import java.util.HashMap;
 
 public class MyHashMap {
+    /*public static void examenTrecut (HashMap <String, Boolean> studentiTrecuti){
+        System.out.println("Studentii ce au trecut examenul sunt: ");
+        /*for (Boolean value: studentiTrecuti.values()){
+            if (studentiTrecuti.containsValue(true)){
+                System.out.println(studentiTrecuti.);
+            }
+        }*/
+        /*for (int i = 1; i<=studentiTrecuti.size(); i++){
+            if (studentiTrecuti.containsValue(true))
+                System.out.println(studentiTrecuti.get(i));
+        }*/
+        /*int i = 0;
+        for (String key: studentiTrecuti.keySet()){
+            if (studentiTrecuti.containsValue(true))
+                System.out.println(studentiTrecuti.get(i));
+            i++;
+        }
+    }*/
     public static void main(String[] args) {
         HashMap <Integer, String> dictionarulNostru = new HashMap<>();
         dictionarulNostru.put(1, "First");
@@ -28,6 +46,19 @@ public class MyHashMap {
 
         for (String value: dictionarulNostru.values()){
             System.out.println(value);
+        }
+
+        HashMap<String, Boolean> studenti = new HashMap<>();
+        studenti.put("Alex", true);
+        studenti.put("Bogdan", true);
+        studenti.put("Cezar", false);
+        studenti.put("Sebastian", false);
+        studenti.put("Darius", true);
+
+        for (String student: studenti.keySet()){
+            if (studenti.get(student)){
+                System.out.println(student);
+            }
         }
     }
 }
